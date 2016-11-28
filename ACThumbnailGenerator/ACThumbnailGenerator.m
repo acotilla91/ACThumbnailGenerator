@@ -123,8 +123,12 @@
         CVPixelBufferRef buffer = [self.videoOutput copyPixelBufferForItemTime:currentTime itemTimeForDisplay:nil];
         
         CIImage *ciImage = [CIImage imageWithCVPixelBuffer:buffer];
-        UIImage *image = [UIImage imageWithCIImage:ciImage];
-
+        
+        CIContext *temporaryContext = [CIContext contextWithOptions:nil];
+        CGImageRef videoImage = [temporaryContext createCGImage:ciImage fromRect:CGRectMake(0, 0, CVPixelBufferGetWidth(buffer), CVPixelBufferGetHeight(buffer))];
+        
+        UIImage *image = [UIImage imageWithCGImage:videoImage];
+        
         self.onImageReadyListener(image);
     }
     else
