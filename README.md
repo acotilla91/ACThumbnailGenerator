@@ -5,7 +5,7 @@
 
 ACThumbnailGenerator is a simple and easy-to-use utility for extracting still images from remote video streams (specially for HLS / m3u8 streams).
 
-##Installation and Setup
+## Installation and Setup
 
 #### Manual
 Just drag the ACThumbnailGenerator folder to your project.
