@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/badge/platform-iOS--tvOS-br.svg)
 ![Language](https://img.shields.io/badge/language-Objective--C-brightgreen.svg )
 
-ACThumbnailGenerator is a simple and easy-to-use utility for extracting still images from remote video streams (specially for HLS / m3u8 streams).
+ACThumbnailGenerator is a simple and easy-to-use utility for extracting still images from remote video streams (specially for HLS / m3u8 streams). See [Swift version](https://github.com/acotilla91/ACThumbnailGenerator-Swift).
 
 ## Installation and Setup
 
